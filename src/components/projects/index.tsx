@@ -1,6 +1,7 @@
 import React from 'react'
 import HeadingText from '../shared/HeadingText'
 import ProjectItem from './ProjectItem'
+import CustomButton from '../shared/CustomButton'
 
 const projects=[
     {title:'Next Blog',tags:['Next.js, Typescript, Tailwind CSS'],link:'https://github.com/MayThinKyi/nextjs-blog'},
@@ -18,11 +19,12 @@ const Projects = () => {
   return (
     <div className='py-40 bg-[#F7EFF3] text-center '>
       <HeadingText title='My Projects' />
-      <div className='mx-auto  px-5 sm:px-10 md:px-[100px] xl:px-[250px] grid  grid-cols-1 md:grid-cols-2 gap-10 '>
+      <div className='mb-16 mx-auto  px-5 sm:px-10 md:px-[100px] xl:px-[250px] grid  grid-cols-1 md:grid-cols-2 gap-10 '>
         {projects.map((item,index)=>{
             return <ProjectItem key={index} {...item} />
         })}
       </div>
+      <CustomButton title='Check my Github for other Projects 🌞' />
     </div>
   )
 }

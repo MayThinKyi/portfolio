@@ -16,3 +16,12 @@ body {
  height: 100vh;
     clip-path:polygon(0 0,100% 0,100% 85vh,0 100%);
 }
+.clip-path2{
+  width: 100%;
+ height: max-content;
+clip-path:polygon(0 21%, 100% 2%, 100% 100%, 0% 100%);;
+}
+.bm-item-list{
+  height: 50% !important;
+  font-family: "Rubik",sans-serif !important;
+}

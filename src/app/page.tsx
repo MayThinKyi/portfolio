@@ -1,3 +1,5 @@
+import Blogs from '@/components/blogs'
+import Footer from '@/components/footer'
 import Hero from '@/components/hero'
 import Introduction from '@/components/introduction'
 import Projects from '@/components/projects'
@@ -11,6 +13,8 @@ const HomePage = () => {
       <Introduction/>
       <Skills/>
       <Projects/>
+      <Blogs/>
+      <Footer/>
     </div>
   )
 }
