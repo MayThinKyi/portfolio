@@ -10,7 +10,7 @@ const Hero = () => {
              width={130} height={130} priority={true} />
             <h1 className='text-4xl md:text-6xl font-bold my-8'>May Thin Kyi</h1>
             <div className='mx-auto  border border-white py-2  px-2 sm:px-5 w-max text-sm sm:text-lg'>
-                {"< Frontend Developer - @Conceptians /> " }
+                {"< Frontend Developer - Next.js,Typescript /> " }
             </div>
             </div>
 

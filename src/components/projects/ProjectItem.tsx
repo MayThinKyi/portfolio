@@ -1,6 +1,6 @@
+import Link from 'next/link';
 import React from 'react'
 import { FaGithub } from "react-icons/fa";
-
 type Props = {
     title:string;
     tags:string[];
@@ -9,6 +9,7 @@ type Props = {
 
 const ProjectItem = ({title,tags,link}: Props) => {
   return (
+    <Link href={link} target='_blank'>
     <div className='w-full flex items-center gap-x-3 cursor-pointer transition-all ease-in-out delay-150  border rounded-xl py-4 px-4 sm:px-6  bg-white text-slate-900 hover:bg-black hover:text-white'>
        <FaGithub size={32} />
         <div className='text-left'>
@@ -20,6 +21,7 @@ const ProjectItem = ({title,tags,link}: Props) => {
         </p>
         </div>
     </div>
+    </Link>
   )
 }
 

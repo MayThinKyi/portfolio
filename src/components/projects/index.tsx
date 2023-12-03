@@ -5,7 +5,7 @@ import CustomButton from '../shared/CustomButton'
 
 const projects=[
     {title:'Next Blog',tags:['Next.js, Typescript, Tailwind CSS'],link:'https://github.com/MayThinKyi/nextjs-blog'},
-    {title:'EvoGym Landing Page',tags:['React, Typescript, Tailwind CSS'],link:'/https://github.com/MayThinKyi/ts-landing-page'},
+    {title:'EvoGym Landing Page',tags:['React, Typescript, Tailwind CSS'],link:'https://github.com/MayThinKyi/ts-landing-page'},
     {title:'Home Rental',tags:['React, Node, Express, MongoDB,  Tailwind CSS'],link:'https://github.com/MayThinKyi/home-rental-mern'},
     {title:'MERN Ecommerce',tags:['React, Node, Express, MongoDB,  Tailwind CSS'],link:'https://github.com/MayThinKyi/mern-ecommerce'},
     {title:'Media App',tags:['React, Node, Express, MySQL,  Tailwind CSS'],link:'https://github.com/MayThinKyi/mern-social-lite'},
@@ -17,9 +17,9 @@ const projects=[
 
 const Projects = () => {
   return (
-    <div className='py-40 bg-[#F7EFF3] text-center '>
+    <div id='projects' className='py-40 bg-[#F7EFF3] text-center '>
       <HeadingText title='My Projects' />
-      <div className='mb-16 mx-auto  px-5 sm:px-10 md:px-[100px] xl:px-[250px] grid  grid-cols-1 md:grid-cols-2 gap-10 '>
+      <div className='mb-16 sm:mx-auto px-5   sm:px-10 md:px-[100px] xl:px-[250px] grid  grid-cols-1 md:grid-cols-2 gap-10 '>
         {projects.map((item,index)=>{
             return <ProjectItem key={index} {...item} />
         })}

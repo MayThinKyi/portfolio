@@ -25,9 +25,9 @@ const skills:Skill[]=[
 const Skills = () => {
 
   return (
-    <div className='py-40 bg-[#F7F7F7] text-center '>
+    <div id='skills' className='py-40 bg-[#F7F7F7] text-center '>
         <HeadingText title={'Tech Stacks'} />
-        <div className='px-10  xl:px-[200px] mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-12'>
+        <div className='px-5 sm:px-10  xl:px-[200px] mx-auto  content-center  grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-x-5 gap-y-10 sm:gap-12'>
            {skills.map((skill,index)=>{
             return <SkillItem key={index} {...skill} />
            })}

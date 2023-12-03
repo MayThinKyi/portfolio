@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import React,{useState} from 'react'
 import { slide as HamburgerMenu, State } from 'react-burger-menu'
 import { FiMenu } from "react-icons/fi";
@@ -20,11 +21,11 @@ const Menu = () => {
     <FiMenu size={30} />
     </div>
     <div className='mt-10 ' >
-    <a id="home" className="hover:underline text-xl sm:text-2xl uppercase menu-item block mb-10" href="/">About</a>
-    <a id="about" className="hover:underline text-xl sm:text-2xl uppercase menu-item block  mb-10" href="/about">Skills</a>
-    <a id="contact" className="hover:underline text-xl sm:text-2xl uppercase menu-item block mb-10" href="/contact">Projects</a>
-    <a id="contact" className="hover:underline text-xl sm:text-2xl uppercase menu-item block mb-10 " href="/contact">Blogs</a>
-    <a id="contact" className="hover:underline text-xl sm:text-2xl uppercase menu-item block " href="/contact">Contacts</a>
+    <Link href={'#introduction'} onClick={()=>setIsOpen(!isOpen)} className="hover:underline text-xl sm:text-2xl uppercase menu-item block mb-10" >About</Link>
+    <Link href={'#skills'} onClick={()=>setIsOpen(!isOpen)}  className="hover:underline text-xl sm:text-2xl uppercase menu-item block  mb-10"  >Skills</Link>
+    <Link href={'#projects'} onClick={()=>setIsOpen(!isOpen)}   className="hover:underline text-xl sm:text-2xl uppercase menu-item block mb-10"  >Projects</Link>
+    <Link href={'#blogs'} onClick={()=>setIsOpen(!isOpen)}  className="hover:underline text-xl sm:text-2xl uppercase menu-item block mb-10 " >Blogs</Link>
+    <Link href={'#contact'} onClick={()=>setIsOpen(!isOpen)}   className="hover:underline text-xl sm:text-2xl uppercase menu-item block "  >Contacts</Link>
 
     </div>
   </HamburgerMenu>
