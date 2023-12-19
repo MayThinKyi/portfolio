@@ -4,12 +4,13 @@ import CustomButton from '../shared/CustomButton'
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub,FaFacebook } from "react-icons/fa";
 import { BiLogoInstagramAlt } from "react-icons/bi";
+import Link from 'next/link';
 
 const socials=[
-    {icon:<FaLinkedin/>,link:''},
-    {icon:<FaGithub/>,link:''},
-    {icon:<BiLogoInstagramAlt/>,link:''},
-    {icon:<FaFacebook/>,link:''},
+    {icon:<FaLinkedin/>,link:'https://www.linkedin.com/in/may-thin-kyi-023b861b6/'},
+    {icon:<FaGithub/>,link:'https://github.com/MayThinKyi'},
+    {icon:<BiLogoInstagramAlt/>,link:'https://www.instagram.com/may__thinkyi/'},
+    {icon:<FaFacebook/>,link:'https://www.facebook.com/profile.php?id=100045855702017'},
 ]
 
 const Footer = () => {
@@ -19,9 +20,9 @@ const Footer = () => {
       <CustomButton title='maytinkyi2003@gmail.com' color='#fff' />
       <div className='flex items-center justify-center mt-20 gap-5 sm:gap-10'>
         {socials.map((social,index)=>{
-            return <div key={index} >
+            return <Link target='_blank' href={social.link} key={index} >
                 <span className='text-4xl sm:text-5xl cursor-pointer'>{social.icon}</span>
-            </div>
+            </Link>
         })}
       </div>
     </div>
